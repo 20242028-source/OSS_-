@@ -1,0 +1,579 @@
+﻿**********************
+Windows PowerShell 기록 시작
+시작 시간: 20261019155430
+사용자 이름: DESKTOP-SSQ3LC2\user
+RunAs 사용자: DESKTOP-SSQ3LC2\user
+구성 이름: 
+Machine: DESKTOP-SSQ3LC2 (Microsoft Windows NT 10.0.26100.0)
+호스트 응용 프로그램: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe
+프로세스 ID: 23144
+PSVersion: 5.1.26100.4768
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.4768
+BuildVersion: 10.0.26100.4768
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+기록이 시작되었습니다. 출력 파일은 .\docker-log.txt입니다.
+PS C:\Users\user\6주차\실습1> docker build -t flask-app .
+
+PS C:\Users\user\6주차\실습1> docker run --rm flask-app
+
+PS C:\Users\user\6주차\실습1> 종료 오류(): "파이프라인이 중지되었습니다."
+>> 종료 오류(): "파이프라인이 중지되었습니다."
+PS C:\Users\user\6주차\실습1> Get-Content ".\docker-log.txt"
+**********************
+Windows PowerShell 기록 시작
+시작 시간: 20261019155430
+사용자 이름: DESKTOP-SSQ3LC2\user
+RunAs 사용자: DESKTOP-SSQ3LC2\user
+구성 이름:
+Machine: DESKTOP-SSQ3LC2 (Microsoft Windows NT 10.0.26100.0)
+호스트 응용 프로그램: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe
+프로세스 ID: 23144
+PSVersion: 5.1.26100.4768
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.4768
+BuildVersion: 10.0.26100.4768
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+기록이 시작되었습니다. 출력 파일은 .\docker-log.txt입니다.
+PS C:\Users\user\6주차\실습1> docker build -t flask-app .
+
+PS C:\Users\user\6주차\실습1> docker run --rm flask-app
+
+PS C:\Users\user\6주차\실습1> 종료 오류(): "파이프라인이 중지되었습니다."
+>> 종료 오류(): "파이프라인이 중지되었습니다."
+PS C:\Users\user\6주차\실습1> docker build -t flask-app . *> build-log.txt
+docker : #0 building with "desktop-linux" instance using docker driver
+위치 줄:1 문자:1
++ docker build -t flask-app . *> build-log.txt
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (#0 building wit...g docker driver:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="#0 building with "desktop-linux" instance using docker driver"
+
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="System.Management.Automation.RemoteException"
+#1 [internal] load build definition from Dockerfile
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="#1 [internal] load build definition from Dockerfile"
+#1 transferring dockerfile: 204B done
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="#1 transferring dockerfile: 204B done"
+#1 DONE 0.0s
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="#1 DONE 0.0s"
+
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="System.Management.Automation.RemoteException"
+#2 [internal] load metadata for docker.io/library/python:3.11-slim
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="#2 [internal] load metadata for docker.io/library/python:3.11-slim"
+#2 DONE 0.7s
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="#2 DONE 0.7s"
+
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="System.Management.Automation.RemoteException"
+#3 [internal] load .dockerignore
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="#3 [internal] load .dockerignore"
+#3 transferring context: 2B done
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="#3 transferring context: 2B done"
+#3 DONE 0.0s
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="#3 DONE 0.0s"
+
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="System.Management.Automation.RemoteException"
+#4 [1/5] FROM docker.io/library/python:3.11-slim@sha256:e88e9763f943ec1834f992a4b51e0f24500486803e8bc534e5767af9ea65f6ce
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="#4 [1/5] FROM docker.io/library/python:3.11-slim@sha256:e88e9763f943ec1834f992a4b51e0f24500486803e8bc534e5767af9ea65f6ce"
+#4 resolve docker.io/library/python:3.11-slim@sha256:e88e9763f943ec1834f992a4b51e0f24500486803e8bc534e5767af9ea65f6ce 0.
+0s done
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="#4 resolve docker.io/library/python:3.11-slim@sha256:e88e9763f943ec1834f992a4b51e0f24500486803e8bc534e5767af9ea65f6ce 0.0s done"
+#4 DONE 0.0s
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="#4 DONE 0.0s"
+
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="System.Management.Automation.RemoteException"
+#5 [internal] load build context
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="#5 [internal] load build context"
+#5 transferring context: 63B done
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="#5 transferring context: 63B done"
+#5 DONE 0.0s
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="#5 DONE 0.0s"
+
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="System.Management.Automation.RemoteException"
+#6 [4/5] COPY app.py .
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="#6 [4/5] COPY app.py ."
+#6 CACHED
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="#6 CACHED"
+
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="System.Management.Automation.RemoteException"
+#7 [2/5] WORKDIR /app
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="#7 [2/5] WORKDIR /app"
+#7 CACHED
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="#7 CACHED"
+
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="System.Management.Automation.RemoteException"
+#8 [3/5] COPY requirements.txt .
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="#8 [3/5] COPY requirements.txt ."
+#8 CACHED
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="#8 CACHED"
+
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="System.Management.Automation.RemoteException"
+#9 [5/5] RUN pip install --no-cache-dir -r requirements.txt
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="#9 [5/5] RUN pip install --no-cache-dir -r requirements.txt"
+#9 CACHED
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="#9 CACHED"
+
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="System.Management.Automation.RemoteException"
+#10 exporting to image
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="#10 exporting to image"
+#10 exporting layers done
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="#10 exporting layers done"
+#10 exporting manifest sha256:68479782cdf5761b9045f40d75fbd8d4dc4cfa3dbbcc22bfbd45a83731f1854d done
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="#10 exporting manifest sha256:68479782cdf5761b9045f40d75fbd8d4dc4cfa3dbbcc22bfbd45a83731f1854d done"
+#10 exporting config sha256:ff60b067a6b9ffb7820027ddb283e514335cae906038b4c76aebad6fb2eca6ce done
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="#10 exporting config sha256:ff60b067a6b9ffb7820027ddb283e514335cae906038b4c76aebad6fb2eca6ce done"
+#10 exporting attestation manifest sha256:d0a96e9da0e02f1b1fbf0f92d23e06961e690de34abf9b7d58bc5d7f3b2b4bca 0.0s done
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="#10 exporting attestation manifest sha256:d0a96e9da0e02f1b1fbf0f92d23e06961e690de34abf9b7d58bc5d7f3b2b4bca 0.0s done"
+#10 exporting manifest list sha256:f3ed90b3c43b4127b3c8c508a0855b290d31ca4de0442a36737c2dced75eec75 0.0s done
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="#10 exporting manifest list sha256:f3ed90b3c43b4127b3c8c508a0855b290d31ca4de0442a36737c2dced75eec75 0.0s done"
+#10 naming to docker.io/library/flask-app:latest done
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="#10 naming to docker.io/library/flask-app:latest done"
+#10 unpacking to docker.io/library/flask-app:latest 0.0s done
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="#10 unpacking to docker.io/library/flask-app:latest 0.0s done"
+#10 DONE 0.1s
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="#10 DONE 0.1s"
+PS C:\Users\user\6주차\실습1> curl.exe http://127.0.0.1:5000
+Hello, Docker!
+PS C:\Users\user\6주차\실습1> docker stop flask-test
+
+PS C:\Users\user\6주차\실습1> docker ps -a
+
+PS C:\Users\user\6주차\실습1> Get-ChildItem *.log
+PS C:\Users\user\6주차\실습1> Get-Content .\build-log.txt
+docker : #0 building with "desktop-linux" instance using docker driver
+위치 줄:1 문자:1
++ docker build -t flask-app . *> build-log.txt
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (#0 building wit...g docker driver:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 204B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.11-slim
+#2 DONE 0.7s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/5] FROM docker.io/library/python:3.11-slim@sha256:e88e9763f943ec1834f992a4b51e0f24500486803e8bc534e5767af9ea65f6c
+e
+#4 resolve docker.io/library/python:3.11-slim@sha256:e88e9763f943ec1834f992a4b51e0f24500486803e8bc534e5767af9ea65f6ce 0
+.0s done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 63B done
+#5 DONE 0.0s
+
+#6 [4/5] COPY app.py .
+#6 CACHED
+
+#7 [2/5] WORKDIR /app
+#7 CACHED
+
+#8 [3/5] COPY requirements.txt .
+#8 CACHED
+
+#9 [5/5] RUN pip install --no-cache-dir -r requirements.txt
+#9 CACHED
+
+#10 exporting to image
+#10 exporting layers done
+#10 exporting manifest sha256:68479782cdf5761b9045f40d75fbd8d4dc4cfa3dbbcc22bfbd45a83731f1854d done
+#10 exporting config sha256:ff60b067a6b9ffb7820027ddb283e514335cae906038b4c76aebad6fb2eca6ce done
+#10 exporting attestation manifest sha256:d0a96e9da0e02f1b1fbf0f92d23e06961e690de34abf9b7d58bc5d7f3b2b4bca 0.0s done
+#10 exporting manifest list sha256:f3ed90b3c43b4127b3c8c508a0855b290d31ca4de0442a36737c2dced75eec75 0.0s done
+#10 naming to docker.io/library/flask-app:latest done
+#10 unpacking to docker.io/library/flask-app:latest 0.0s done
+#10 DONE 0.1s
+PS C:\Users\user\6주차\실습1> docker run --rm flask-app *> run-log.txt
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값=" * Serving Flask app 'app'"
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값=" * Debug mode: off"
+docker : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI
+ server instead.[0m
+위치 줄:1 문자:1
++ docker run --rm flask-app *> run-log.txt
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([31m[1mWARNIN...er instead.[0m:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m"
+ * Running on all addresses (0.0.0.0)
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값=" * Running on all addresses (0.0.0.0)"
+ * Running on http://127.0.0.1:5000
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값=" * Running on http://127.0.0.1:5000"
+ * Running on http://172.17.0.3:5000
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값=" * Running on http://172.17.0.3:5000"
+[33mPress CTRL+C to quit[0m
+>> 매개 변수 바인딩(Out-File): 이름="InputObject"; 값="[33mPress CTRL+C to quit[0m"
+PS C:\Users\user\6주차\실습1> 종료 오류(): "파이프라인이 중지되었습니다."
+>> 종료 오류(): "파이프라인이 중지되었습니다."
+PS C:\Users\user\6주차\실습1> Get-Content .\run-log.txt
+ * Serving Flask app 'app'
+ * Debug mode: off
+docker : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSG
+I server instead.[0m
+위치 줄:1 문자:1
++ docker run --rm flask-app *> run-log.txt
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([31m[1mWARNIN...er instead.[0m:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.17.0.3:5000
+[33mPress CTRL+C to quit[0m
+PS C:\Users\user\6주차\실습1> Get-ChildItem
+
+
+    디렉터리: C:\Users\user\6주차\실습1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----      2026-10-19   오후 3:19            182 app.py
+-a----      2026-10-19   오후 3:55           3568 build-log.txt
+-a----      2026-10-19   오후 3:28              0 docker
+-a----      2026-10-19   오후 3:55           1012 docker-log.txt
+-a----      2026-10-19   오후 3:21            165 Dockerfile
+-a----      2026-10-19   오후 3:19              5 requirements.txt
+-a----      2026-10-19   오후 3:56           1200 run-log.txt
+
+
+PS C:\Users\user\6주차\실습1> cd ..
+PS C:\Users\user\6주차> mkdir 실습2
+
+
+    디렉터리: C:\Users\user\6주차
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----      2026-10-19   오후 4:04                실습2
+
+
+PS C:\Users\user\6주차> cd 실습2
+PS C:\Users\user\6주차\실습2> Copy-Item ..\실습1\Dockerfile .
+PS C:\Users\user\6주차\실습2> Copy-Item ..\실습1\requirements.txt .
+PS C:\Users\user\6주차\실습2> notepad app.py
+PS C:\Users\user\6주차\실습2> Get-ChildItem
+
+
+    디렉터리: C:\Users\user\6주차\실습2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----      2026-10-19   오후 4:05            430 app.py
+-a----      2026-10-19   오후 3:21            165 Dockerfile
+-a----      2026-10-19   오후 3:19              5 requirements.txt
+
+
+PS C:\Users\user\6주차\실습2> docker build -t flask-logs:demo .
+
+PS C:\Users\user\6주차\실습2> docker volume create app-logs
+
+PS C:\Users\user\6주차\실습2> docker volume ls
+
+PS C:\Users\user\6주차\실습2> docker run -d --name flask-logs -p 5000:5000 -v app-logs:/app/logs flask-logs:demo
+
+PS C:\Users\user\6주차\실습2> docker ps
+
+PS C:\Users\user\6주차\실습2> docker stop flask-container pedantic_joliot
+
+PS C:\Users\user\6주차\실습2> docker rm flask-logs
+
+PS C:\Users\user\6주차\실습2> docker run -d --name flask-logs -p 5000:5000 -v app-logs:/app/logs flask-logs:demo
+
+PS C:\Users\user\6주차\실습2> docker exec flask-logs cat /app/logs/access.log
+
+PS C:\Users\user\6주차\실습2> docker stop flask-logs
+
+PS C:\Users\user\6주차\실습2> docker rm flask-logs
+
+PS C:\Users\user\6주차\실습2> docker run --rm -v app-logs:/data busybox cat /data/access.log
+
+PS C:\Users\user\6주차\실습2> cd ..
+PS C:\Users\user\6주차> mkdir 실습3
+
+
+    디렉터리: C:\Users\user\6주차
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----      2026-10-19   오후 4:07                실습3
+
+
+PS C:\Users\user\6주차> cd 실습3
+PS C:\Users\user\6주차\실습3> Copy-Item ..\실습2\app.py .
+PS C:\Users\user\6주차\실습3> Copy-Item ..\실습2\Dockerfile .
+PS C:\Users\user\6주차\실습3> Copy-Item ..\실습2\requirements.txt .
+PS C:\Users\user\6주차\실습3> mkdir logs
+
+
+    디렉터리: C:\Users\user\6주차\실습3
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----      2026-10-19   오후 4:07                logs
+
+
+PS C:\Users\user\6주차\실습3> docker build -t flask-bind:demo .
+
+PS C:\Users\user\6주차\실습3> docker run -d --name flask-bind -p 5000:5000 -v "${PWD}/logs:/app/logs" flask-bind:demo
+
+PS C:\Users\user\6주차\실습3> Get-Content .\logs\access.log
+?묒냽 ?쒓컙: 2026-10-19T07:07:53.300252
+?묒냽 ?쒓컙: 2026-10-19T07:07:54.035318
+?묒냽 ?쒓컙: 2026-10-19T07:07:54.363293
+?묒냽 ?쒓컙: 2026-10-19T07:07:54.649444
+?묒냽 ?쒓컙: 2026-10-19T07:07:54.929910
+?묒냽 ?쒓컙: 2026-10-19T07:07:55.198570
+?묒냽 ?쒓컙: 2026-10-19T07:07:55.408306
+?묒냽 ?쒓컙: 2026-10-19T07:07:56.146896
+?묒냽 ?쒓컙: 2026-10-19T07:07:56.481552
+?묒냽 ?쒓컙: 2026-10-19T07:07:56.819429
+?묒냽 ?쒓컙: 2026-10-19T07:07:57.160018
+?묒냽 ?쒓컙: 2026-10-19T07:07:57.464298
+?묒냽 ?쒓컙: 2026-10-19T07:07:57.681337
+PS C:\Users\user\6주차\실습3> docker stop flask-bind
+
+PS C:\Users\user\6주차\실습3> docker rm flask-bind
+
+PS C:\Users\user\6주차\실습3> Get-Content .\logs\access.log
+?묒냽 ?쒓컙: 2026-10-19T07:07:53.300252
+?묒냽 ?쒓컙: 2026-10-19T07:07:54.035318
+?묒냽 ?쒓컙: 2026-10-19T07:07:54.363293
+?묒냽 ?쒓컙: 2026-10-19T07:07:54.649444
+?묒냽 ?쒓컙: 2026-10-19T07:07:54.929910
+?묒냽 ?쒓컙: 2026-10-19T07:07:55.198570
+?묒냽 ?쒓컙: 2026-10-19T07:07:55.408306
+?묒냽 ?쒓컙: 2026-10-19T07:07:56.146896
+?묒냽 ?쒓컙: 2026-10-19T07:07:56.481552
+?묒냽 ?쒓컙: 2026-10-19T07:07:56.819429
+?묒냽 ?쒓컙: 2026-10-19T07:07:57.160018
+?묒냽 ?쒓컙: 2026-10-19T07:07:57.464298
+?묒냽 ?쒓컙: 2026-10-19T07:07:57.681337
+PS C:\Users\user\6주차\실습3> Get-Content .\logs\access.log -Encoding utf8
+접속 시간: 2026-10-19T07:07:53.300252
+접속 시간: 2026-10-19T07:07:54.035318
+접속 시간: 2026-10-19T07:07:54.363293
+접속 시간: 2026-10-19T07:07:54.649444
+접속 시간: 2026-10-19T07:07:54.929910
+접속 시간: 2026-10-19T07:07:55.198570
+접속 시간: 2026-10-19T07:07:55.408306
+접속 시간: 2026-10-19T07:07:56.146896
+접속 시간: 2026-10-19T07:07:56.481552
+접속 시간: 2026-10-19T07:07:56.819429
+접속 시간: 2026-10-19T07:07:57.160018
+접속 시간: 2026-10-19T07:07:57.464298
+접속 시간: 2026-10-19T07:07:57.681337
+PS C:\Users\user\6주차\실습3> docker run --rm -v app-logs:/data busybox cat /data/access.log | Out-File -Encoding utf8 ..\실습2\access.log
+PS C:\Users\user\6주차\실습3> cd C:\Users\user\6주차
+PS C:\Users\user\6주차> Get-ChildItem -Recurse
+
+
+    디렉터리: C:\Users\user\6주차
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----      2026-10-19   오후 3:56                실습1
+d-----      2026-10-19   오후 4:05                실습2
+d-----      2026-10-19   오후 4:07                실습3
+-a----      2026-10-19   오후 3:49          20435 oss_week6_유건_20242028.ipynb
+
+
+    디렉터리: C:\Users\user\6주차\실습1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----      2026-10-19   오후 4:05            198 app.py
+-a----      2026-10-19   오후 3:55           3568 build-log.txt
+-a----      2026-10-19   오후 3:28              0 docker
+-a----      2026-10-19   오후 3:55           1012 docker-log.txt
+-a----      2026-10-19   오후 3:21            165 Dockerfile
+-a----      2026-10-19   오후 4:05             32 requirements.txt
+-a----      2026-10-19   오후 3:56           1200 run-log.txt
+
+
+    디렉터리: C:\Users\user\6주차\실습2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----      2026-10-19   오후 4:08            318 access.log
+-a----      2026-10-19   오후 4:05            430 app.py
+-a----      2026-10-19   오후 3:21            165 Dockerfile
+-a----      2026-10-19   오후 3:19              5 requirements.txt
+
+
+    디렉터리: C:\Users\user\6주차\실습3
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----      2026-10-19   오후 4:07                logs
+-a----      2026-10-19   오후 4:05            430 app.py
+-a----      2026-10-19   오후 3:21            165 Dockerfile
+-a----      2026-10-19   오후 3:19              5 requirements.txt
+
+
+    디렉터리: C:\Users\user\6주차\실습3\logs
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----      2026-10-19   오후 4:07            546 access.log
+
+
+PS C:\Users\user\6주차> Remove-Item .\실습1\docker
+PS C:\Users\user\6주차> Compress-Archive -Path .\* -DestinationPath ..\6주차_유건_20242028.zip
+ZipArchiveHelper : 'C:\Users\user\6주차\실습1\docker-log.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+위치 C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Archive\Microsoft.PowerShell.Archive.psm1:697
+ 문자:30
++ ... sArchived = ZipArchiveHelper $subDirFiles.ToArray() $destinationPath  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (C:\Users\user\6주차\실습1\docker-log.txt:String) [Write-Error], IOException
+    + FullyQualifiedErrorId : CompressArchiveUnauthorizedAccessError,ZipArchiveHelper
+ZipArchiveHelper : 'C:\Users\user\6주차\실습1\docker-log.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세
+스할 수 없습니다.
+위치 C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Archive\Microsoft.PowerShell.Archive.psm1:
+697 문자:30
++ ... sArchived = ZipArchiveHelper $subDirFiles.ToArray() $destinationPath  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (C:\Users\user\6주차\실습1\docker-log.txt:String) [Write-Error], IOExce
+pti    on
+    + FullyQualifiedErrorId : CompressArchiveUnauthorizedAccessError,ZipArchiveHelper
+
+PS C:\Users\user\6주차> 종료 오류(New-Object): ""1"개의 인수가 있는 ".ctor"을(를) 호출하는 동안 예외가 발생했습니다. "스트림을 읽을 수 없습니다.""
+PS C:\Users\user\6주차> 종료 오류(New-Object): ""1"개의 인수가 있는 ".ctor"을(를) 호출하는 동안 예외가 발생했습니다. "스트림을 읽을 수 없습니다.""
+>> 종료 오류(New-Object): ""1"개의 인수가 있는 ".ctor"을(를) 호출하는 동안 예외가 발생했습니다. "스트림을 읽을 수 없습니다.""
+>> 종료 오류(New-Object): ""1"개의 인수가 있는 ".ctor"을(를) 호출하는 동안 예외가 발생했습니다. "스트림을 읽을 수 없습니다.""
+New-Object : "1"개의 인수가 있는 ".ctor"을(를) 호출하는 동안 예외가 발생했습니다. "스트림을 읽을 수 없습니다."
+위치 C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Archive\Microsoft.PowerShell.Archive.psm1:808
+ 문자:38
++ ...     $srcStream = New-Object System.IO.BinaryReader $currentFileStream
++                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [New-Object], MethodInvocationException
+    + FullyQualifiedErrorId : ConstructorInvokedThrowException,Microsoft.PowerShell.Commands.NewObjectCommand
+New-Object : "1"개의 인수가 있는 ".ctor"을(를) 호출하는 동안 예외가 발생했습니다. "스트림을 읽을 수 없습니다."
+위치 C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Archive\Microsoft.PowerShell.Archive.psm1:
+808 문자:38
++ ...     $srcStream = New-Object System.IO.BinaryReader $currentFileStream
++                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [New-Object], MethodInvocationException
+    + FullyQualifiedErrorId : ConstructorInvokedThrowException,Microsoft.PowerShell.Commands.NewObjectCommand
+
+PS C:\Users\user\6주차> Compress-Archive -Path .\* -DestinationPath ..\6주차_유건_20242028.zip -Force
+ZipArchiveHelper : 'C:\Users\user\6주차\실습1\docker-log.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+위치 C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Archive\Microsoft.PowerShell.Archive.psm1:697
+ 문자:30
++ ... sArchived = ZipArchiveHelper $subDirFiles.ToArray() $destinationPath  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (C:\Users\user\6주차\실습1\docker-log.txt:String) [Write-Error], IOException
+    + FullyQualifiedErrorId : CompressArchiveUnauthorizedAccessError,ZipArchiveHelper
+ZipArchiveHelper : 'C:\Users\user\6주차\실습1\docker-log.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세
+스할 수 없습니다.
+위치 C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Archive\Microsoft.PowerShell.Archive.psm1:
+697 문자:30
++ ... sArchived = ZipArchiveHelper $subDirFiles.ToArray() $destinationPath  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (C:\Users\user\6주차\실습1\docker-log.txt:String) [Write-Error], IOExce
+pti    on
+    + FullyQualifiedErrorId : CompressArchiveUnauthorizedAccessError,ZipArchiveHelper
+
+PS C:\Users\user\6주차> 종료 오류(New-Object): ""1"개의 인수가 있는 ".ctor"을(를) 호출하는 동안 예외가 발생했습니다. "스트림을 읽을 수 없습니다.""
+PS C:\Users\user\6주차> 종료 오류(New-Object): ""1"개의 인수가 있는 ".ctor"을(를) 호출하는 동안 예외가 발생했습니다. "스트림을 읽을 수 없습니다.""
+>> 종료 오류(New-Object): ""1"개의 인수가 있는 ".ctor"을(를) 호출하는 동안 예외가 발생했습니다. "스트림을 읽을 수 없습니다.""
+>> 종료 오류(New-Object): ""1"개의 인수가 있는 ".ctor"을(를) 호출하는 동안 예외가 발생했습니다. "스트림을 읽을 수 없습니다.""
+New-Object : "1"개의 인수가 있는 ".ctor"을(를) 호출하는 동안 예외가 발생했습니다. "스트림을 읽을 수 없습니다."
+위치 C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Archive\Microsoft.PowerShell.Archive.psm1:808
+ 문자:38
++ ...     $srcStream = New-Object System.IO.BinaryReader $currentFileStream
++                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [New-Object], MethodInvocationException
+    + FullyQualifiedErrorId : ConstructorInvokedThrowException,Microsoft.PowerShell.Commands.NewObjectCommand
+New-Object : "1"개의 인수가 있는 ".ctor"을(를) 호출하는 동안 예외가 발생했습니다. "스트림을 읽을 수 없습니다."
+위치 C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Archive\Microsoft.PowerShell.Archive.psm1:
+808 문자:38
++ ...     $srcStream = New-Object System.IO.BinaryReader $currentFileStream
++                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [New-Object], MethodInvocationException
+    + FullyQualifiedErrorId : ConstructorInvokedThrowException,Microsoft.PowerShell.Commands.NewObjectCommand
+
+PS C:\Users\user\6주차> Get-Item ..\6주차_유건_20242028.zip
+Get-Item : 'C:\Users\user\6주차_유건_20242028.zip' 경로는 존재하지 않으므로 찾을 수 없습니다.
+위치 줄:1 문자:1
++ Get-Item ..\6주차_유건_20242028.zip
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\user\6주차_유건_20242028.zip:String) [Get-Item], ItemNotFoundExcepti
+on
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetItemCommand
+Get-Item : 'C:\Users\user\6주차_유건_20242028.zip' 경로는 존재하지 않으므로 찾을 수 없습니다.
+위치 줄:1 문자:1
++ Get-Item ..\6주차_유건_20242028.zip
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\user\6주차_유건_20242028.zip:String) [Get-Item], ItemNotFoundEx
+cep    tion
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetItemCommand
+
+PS C:\Users\user\6주차> cd ..
+PS C:\Users\user> tar -a -c -f 6주차_유건_20242028.zip --exclude=실습1/docker-log.txt 6주차
+
+PS C:\Users\user> Get-Item .\6주차_유건_20242028.zip
+
+
+    디렉터리: C:\Users\user
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----      2026-10-19   오후 4:10          10273 6주차_유건_20242028.zip
+
+
+PS C:\Users\user> tar -tf .\6주차_유건_20242028.zip
+
+PS C:\Users\user> cd C:\Users\user
+PS C:\Users\user> git clone https://github.com/20242028-source/OSS_-.git
+
+PS C:\Users\user> Copy-Item -Path .\6주차 -Destination .\OSS_-\6주차 -Recursecd .\OSS_-
+>> 종료 오류(Copy-Item): "매개 변수 이름 'Recursecd'과(와) 일치하는 매개 변수를 찾을 수 없습니다."
+Copy-Item : 매개 변수 이름 'Recursecd'과(와) 일치하는 매개 변수를 찾을 수 없습니다.
+위치 줄:1 문자:48
++ Copy-Item -Path .\6주차 -Destination .\OSS_-\6주차 -Recursecd .\OSS_-
++                                                ~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Copy-Item], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : 매개 변수 이름 'Recursecd'과(와) 일치하는 매개 변수를 찾을 수 없습니다.
+위치 줄:1 문자:48
++ Copy-Item -Path .\6주차 -Destination .\OSS_-\6주차 -Recursecd .\OSS_-
++                                                ~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Copy-Item], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+PS C:\Users\user> git add 6주차
+
+PS C:\Users\user> git commit -m "Add week 6 Docker assignments"
+
+PS C:\Users\user> git push origin mainCopy-Item -Path .\6주차 -Destination .\OSS_-\6주차 -Recurse
+
+PS C:\Users\user> cd .\OSS_-
+PS C:\Users\user\OSS_-> git add 6주차
+
+PS C:\Users\user\OSS_-> git commit -m "Add week 6 Docker assignments"
+
