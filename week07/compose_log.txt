@@ -1,0 +1,24 @@
+redis-1  | 1:C 02 Nov 2026 05:21:45.941 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+web-1    |  * Serving Flask app 'app'
+web-1    |  * Debug mode: off
+web-1    | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+web-1    |  * Running on all addresses (0.0.0.0)
+web-1    |  * Running on http://127.0.0.1:5000
+web-1    |  * Running on http://172.18.0.3:5000
+web-1    | [33mPress CTRL+C to quit[0m
+web-1    | 172.18.0.1 - - [02/Nov/2026 05:22:08] "GET / HTTP/1.1" 200 -
+web-1    | 172.18.0.1 - - [02/Nov/2026 05:22:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+web-1    | 172.18.0.1 - - [02/Nov/2026 05:22:08] "GET / HTTP/1.1" 200 -
+redis-1  | 1:C 02 Nov 2026 05:21:45.941 * Redis version=7.4.12, bits=64, commit=00000000, modified=0, pid=1, just started
+redis-1  | 1:C 02 Nov 2026 05:21:45.941 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+web-1    | 172.18.0.1 - - [02/Nov/2026 05:22:09] "GET / HTTP/1.1" 200 -
+web-1    | 172.18.0.1 - - [02/Nov/2026 05:22:09] "GET / HTTP/1.1" 200 -
+redis-1  | 1:M 02 Nov 2026 05:21:45.941 * monotonic clock: POSIX clock_gettime
+redis-1  | 1:M 02 Nov 2026 05:21:45.941 * Running mode=standalone, port=6379.
+web-1    | 172.18.0.1 - - [02/Nov/2026 05:22:09] "GET / HTTP/1.1" 200 -
+redis-1  | 1:M 02 Nov 2026 05:21:45.941 * Server initialized
+redis-1  | 1:M 02 Nov 2026 05:21:45.941 * Ready to accept connections tcp
+web-1    | 172.18.0.1 - - [02/Nov/2026 05:22:09] "GET / HTTP/1.1" 200 -
+web-1    | 172.18.0.1 - - [02/Nov/2026 05:22:10] "GET / HTTP/1.1" 200 -
+web-1    | 172.18.0.1 - - [02/Nov/2026 05:22:10] "GET / HTTP/1.1" 200 -
+web-1    | 172.18.0.1 - - [02/Nov/2026 05:22:10] "GET / HTTP/1.1" 200 -
